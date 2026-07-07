@@ -13,12 +13,31 @@
   <h1>🚀 Tofe Editor</h1>
   <p>Welcome to Tofe Editor Mini App</p>
 
-  <a href="https://t.me/Tofe_editor" class="btn">📢 Join Channel</a>
+  <div id="main-menu">
+    <a href="https://t.me/Tofe_editor" class="btn">📢 Join Channel</a>
+    <button class="btn" id="photo-btn">📷 Photo Editor</button>
+    <button class="btn" id="video-btn">🎥 Video Editor</button>
+    <button class="btn" id="ai-btn">🤖 AI Prompt</button>
+    <button class="btn" id="premium-btn">📦 Premium</button>
+  </div>
 
-  <button class="btn">📷 Photo Editor</button>
-  <button class="btn">🎥 Video Editor</button>
-  <button class="btn">🤖 AI Prompt</button>
-  <button class="btn">📦 Premium</button>
+  <div id="editor-page" style="display: none; margin-top: 20px;">
+    <h3>📷 Photo Editor Mode</h3>
+    <label for="image-upload" class="btn" style="background-color: #2481cc;">Suuraa Filadhu</label>
+    <input type="file" id="image-upload" accept="image/*" style="display: none;"><br><br>
+    <textarea id="prompt-input" placeholder="Prompt kee asitti barreassi..."></textarea><br>
+    <button class="btn" id="submit-edit" style="background-color: #2ecc71;">Eedit Godhi</button>
+    <button class="btn" id="back-btn" style="background-color: #e74c3c;">Duubatti Deebi'i</button>
+  </div>
+
+  <div id="video-page" style="display: none; margin-top: 20px;">
+    <h3>🎥 Video Editor Mode</h3>
+    <label for="video-upload" class="btn" style="background-color: #2481cc;">Viidiyoo Filadhu</label>
+    <input type="file" id="video-upload" accept="video/*" style="display: none;"><br><br>
+    <textarea id="video-prompt-input" placeholder="Viidiyoo keetiif prompt barreassi... (Fakkeenya: Add cinematic effects)"></textarea><br>
+    <button class="btn" id="submit-video-edit" style="background-color: #2ecc71;">Viidiyoo Eedit Godhi</button>
+    <button class="btn" id="video-back-btn" style="background-color: #e74c3c;">Duubatti Deebi'i</button>
+  </div>
 </div>
 
 <script src="script.js"></script>
